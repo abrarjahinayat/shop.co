@@ -6,6 +6,7 @@ import NewArrivals from '../components/NewArrivals'
 import TopSelling from '../components/TopSelling'
 import DressStyle from '../components/DressStyle'
 import CustomerFeedback from '../components/CustomerFeedback'
+import Newslatter from '../components/Newslatter'
 
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
       <TopSelling/>
       <DressStyle/>
       <CustomerFeedback/>
+      <Newslatter/>
 
     </div>
   )

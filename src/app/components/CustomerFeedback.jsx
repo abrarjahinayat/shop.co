@@ -6,7 +6,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Custorslide from "./Custorslide";
+import Customerslide from "./Customerslide";
 
 export default function CustomerFeedback() {
   return (
@@ -26,17 +26,17 @@ export default function CustomerFeedback() {
           >
             <SwiperSlide>
               <div className="">
-                <Custorslide/>
+                <Customerslide/>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="">
-                 <Custorslide/>
+                 <Customerslide/>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="">
-                 <Custorslide/>
+                 <Customerslide/>
               </div>
             </SwiperSlide>
     

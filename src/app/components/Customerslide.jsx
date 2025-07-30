@@ -2,7 +2,7 @@ import React from 'react'
 import starfull from '../productimg/starfull.png'
 import verified from '../images/verified.png'
 import Image from 'next/image'
-const Custorslide = () => {
+const Customerslide = () => {
   return (
     <section>
         <div className="container">
@@ -58,4 +58,4 @@ const Custorslide = () => {
   )
 }
 
-export default Custorslide
+export default Customerslide

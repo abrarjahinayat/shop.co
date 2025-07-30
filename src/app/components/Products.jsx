@@ -35,7 +35,7 @@ const Products = () => {
         {
             productData.map((item)=>(
 
-        <div className="hover:bg-white hover:border hover:border-gray-300 w-fit px-3 py-5 rounded-md hover:shadow-md cursor-pointer">
+        <div className=" border border-gray-100 hover:border-black/20 w-[295px] px-3 py-5 rounded-md cursor-pointer">
           <Image src={item.image} alt="" />
           <h4 className="text-md font-lato font-bold text-black mt-3">{item.title}</h4>
             <div className="flex items-center mt-1">
