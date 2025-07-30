@@ -5,6 +5,8 @@ import Brands from '../components/Brands'
 import NewArrivals from '../components/NewArrivals'
 import TopSelling from '../components/TopSelling'
 import DressStyle from '../components/DressStyle'
+import CustomerFeedback from '../components/CustomerFeedback'
+
 
 const page = () => {
   return (
@@ -14,6 +16,8 @@ const page = () => {
       <NewArrivals/>
       <TopSelling/>
       <DressStyle/>
+      <CustomerFeedback/>
+
     </div>
   )
 }
