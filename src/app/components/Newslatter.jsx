@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Newslatter() {
   return (
-    <section className="">
+    <section className="relative top-20">
       <div className="container">
         <div className="bg-black-bg flex justify-between py-10 px-13 rounded-4xl items-center">
           <div>
