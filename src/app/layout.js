@@ -1,8 +1,14 @@
-import { Lato, Poppins} from "next/font/google";
+import { Lato, Poppins, Oswald} from "next/font/google";
 import "./globals.css";
 
 const lato = Lato({
   variable: "--font-lato",
+  subsets: ["latin"],
+   weight: ["400", "700"],
+});
+
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
    weight: ["400", "700"],
 });
@@ -22,10 +28,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} ${poppins.variable} antialiased`}
+        className={`${lato.variable} ${poppins.variable} ${oswald.variable} antialiased`}
       >
         {children}
+        
       </body>
+      
     </html>
   );
 }

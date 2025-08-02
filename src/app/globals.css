@@ -5,7 +5,8 @@
 
 @theme{
   --font-lato: var(--font-lato);
-  --font-poppins: var(--font-oswald);
+  --font-poppins: var(--font-poppins);
+  --font-oswald: var(--font-oswald);
   --color-black-bg: #000000;
   --color-searchbar-bg: #F0F0F0;
 
