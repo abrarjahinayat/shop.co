@@ -14,7 +14,7 @@
 
 @layer components{
   .container{
-    @apply mx-auto !max-w-[1240px];
+    @apply mx-auto !max-w-[1340px];
   }
 }
 

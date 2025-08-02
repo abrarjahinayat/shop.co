@@ -4,6 +4,7 @@ import style2 from '../images/style2.png'
 import style3 from '../images/style3.png'
 import style4 from '../images/style4.png'
 import Image from 'next/image'
+import Link from 'next/link'
 const DressStyle = () => {
   return (
     <section>
@@ -11,7 +12,9 @@ const DressStyle = () => {
             <div className='bg-searchbar-bg rounded-4xl py-16 px-16'>
                 <h2 className='font-poppins font-bold text-5xl text-black uppercase text-center'>BROWSE BY Dress STYLE</h2>
                 <div className='flex  gap-5 pt-14'>
+                    <Link href={'/category'}>
                     <Image className='scale-95 hover:scale-105 hover:shadow transition cursor-pointer duration-700 ease-in-out' src={style1} alt="" />
+                    </Link>
                     <Image className='scale-95 hover:scale-105 hover:shadow transition cursor-pointer duration-700 ease-in-out' src={style2} alt="" />
                 </div>
                 <div className='flex gap-5 pt-5'>

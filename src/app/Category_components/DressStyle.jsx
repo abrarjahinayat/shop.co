@@ -36,13 +36,14 @@ export default function DressStyle() {
             active1 && 
 
         <div>
+            
           <div>
             <div
               onClick={() => handleactive(1)}
               className="flex justify-between items-center p-2 cursor-pointer "
             >
               <h4 className="font-oswald text-base text-black/60 font-medium">
-                T-Shirts
+               Casual
               </h4>
               <IoIosArrowForward
                 className={`${
@@ -89,7 +90,7 @@ export default function DressStyle() {
               className="flex justify-between items-center p-2 cursor-pointer "
             >
               <h4 className="font-oswald text-base text-black/60 font-medium">
-                Shorts
+             Formal
               </h4>
               <IoIosArrowForward
                 className={`${
@@ -136,7 +137,7 @@ export default function DressStyle() {
               className="flex justify-between items-center p-2 cursor-pointer "
             >
               <h4 className="font-oswald text-base text-black/60 font-medium">
-                Shirts
+              Party
               </h4>
               <IoIosArrowForward
                 className={`${
@@ -183,7 +184,7 @@ export default function DressStyle() {
               className="flex justify-between items-center p-2 cursor-pointer "
             >
               <h4 className="font-oswald text-base text-black/60 font-medium">
-                Hoodie
+              Gym
               </h4>
               <IoIosArrowForward
                 className={`${
