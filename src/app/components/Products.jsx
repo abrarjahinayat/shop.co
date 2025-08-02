@@ -6,6 +6,7 @@ import product4 from "../productimg/product4.png";
 import starfull from '../productimg/starfull.png'
 import starhalf from '../productimg/starhalf.png'
 import Image from "next/image";
+import Link from "next/link";
 
 const Products = () => {
     const productData =[
@@ -35,7 +36,7 @@ const Products = () => {
         {
             productData.map((item)=>(
 
-        <div className=" border border-gray-100 hover:border-black/20 w-[295px] px-3 py-5 rounded-md cursor-pointer">
+        <Link href={'/productDetailes'} className=" border border-gray-100 hover:border-black/20 w-[295px] px-3 py-5 rounded-md cursor-pointer">
           <Image src={item.image} alt="" />
           <h4 className="text-md font-lato font-bold text-black mt-3">{item.title}</h4>
             <div className="flex items-center mt-1">
@@ -47,7 +48,7 @@ const Products = () => {
                 <p className="font-lato text-sm font-normal ml-3">4.5/5</p>
             </div>
             <h6 className="font-poppins font-bold text-2xl text-black mt-2">${item.Price}</h6>
-        </div>
+        </Link>
             ))
         }
         </div>

@@ -4,15 +4,14 @@ import React, { useState } from "react";
 import icon1 from '../productdetailesimg/icon1.png'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Reviews from "./Reviews";
+import Products from "../components/Products";
+import Productdetailes from "./Productdetailes";
+import Faqs from "./Faqs";
 
 
 export default function Rating() {
   const [active, setactive] = useState(2);
-  const [morereivew,setmorereview]= useState(false)
 
-  const handlemorereview = ()=>{
-    setmorereview(!morereivew)
-  }
 
   const handleactive = (number) => {
     setactive(number);
@@ -56,34 +55,22 @@ export default function Rating() {
             </h5>
           </div>
         </div>
-        <div className="mt-7">
-          <div className="flex items-center justify-between">
-            <h3 className="font-poppins font-bold text-black text-2xl">
-              All Reviews
-            </h3>
-            <div className="flex items-center gap-x-4">
 
-            <div>
-                <span className="w-12 h-12 bg-searchbar-bg flex items-center justify-center rounded-full"><Image src={icon1} alt="" /></span>
-            </div>
-            <div className="flex items-center gap-x-3 bg-searchbar-bg rounded-4xl py-3 px-5 cursor-pointer">
-                <p className="font-poppins text-base font-medium text-black ">Latest</p>
-                <MdKeyboardArrowDown className="text-xl" />
-            </div>
-                   <div className="bg-black rounded-4xl hover:bg-black/85 hover:rounded-4xl ">
-                        <button className="text-base font-poppins font-medium text-white px-6 py-3 cursor-pointer   ">Write a Review</button>
-                    </div>
-            </div>
-          </div>
+        <div >
+                {
+                  active ==1 ? (<Productdetailes/>) :
+                 active ==2 ? (<Reviews/>) : 
+                 active == 3 ? (<Faqs/>) : null
+                }
         </div>
-        <Reviews/>
 
-          {
-            morereivew && <Reviews/> 
+        {/* ====== Review section start ======== */}
+      
+ 
+
        
-          }
 
-             <button onClick={handlemorereview} className="bg-white border transition duration-300 ease-in-out border-gray-300 rounded-full text-black text-md font-lato font-medium py-4 px-20 mx-auto block mt-10 cursor-pointer hover:bg-black hover:text-white">Load More Reviews</button>
+          
 
         
       </div>

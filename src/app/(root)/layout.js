@@ -10,7 +10,6 @@ export default function layout({children}) {
       <Topnav/>
       <Navbar/>
       {children}
-      <Newslatter/>
       <Footer/>
     </div>
   )
