@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import Price from "./Price";
 import Colors from "./Colors";
+import Size from "./Size";
 export default function CasualProducts() {
   const [active, setactive] = useState(false);
 
@@ -261,6 +262,9 @@ export default function CasualProducts() {
           </div>
           <div>
             <Colors/>
+          </div>
+          <div>
+            <Size/>
           </div>
         </div>
         {/* ====== sidebar end ========= */}
