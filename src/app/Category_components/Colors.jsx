@@ -17,10 +17,10 @@ export default function Colors() {
   return (
     <section>
       <div className="container">
-        <div className="border-b pb-3">
+        <div className="border-b pb-4">
         <div
           onClick={handleactive}
-          className="p-4  flex justify-between items-center cursor-pointer"
+          className="p-2  flex justify-between items-center cursor-pointer"
         >
           <h5 className="font-poppins font-bold text-xl text-black">Colors</h5>
           <IoIosArrowForward

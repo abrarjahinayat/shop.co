@@ -12,10 +12,10 @@ export default function Price() {
  }
 
   return (
-    <section>
+    <section className="py-4">
       <div className="container">
-            <div className="border-b ">
-        <div onClick={handleactive} className="p-4  flex justify-between items-center cursor-pointer">
+            <div className="border-b pb-2 ">
+        <div onClick={handleactive} className="p-2   flex justify-between items-center cursor-pointer">
           <h5 className="font-poppins font-bold text-xl text-black">Price</h5>
           <IoIosArrowForward  className={`${
                   active 

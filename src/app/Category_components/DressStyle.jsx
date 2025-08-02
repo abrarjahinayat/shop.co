@@ -1,29 +1,41 @@
 "use client";
 import React, { useState } from "react";
-import icon1 from "../categoryimg/icon1.png";
-import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
-import Price from "./Price";
-import Colors from "./Colors";
-import Size from "./Size";
-import DressStyle from "./DressStyle";
-export default function CasualProducts() {
-  const [active, setactive] = useState(false);
 
-  const handleactive = (number) => {
+export default function DressStyle() {
+  const [active1, setactive1] = useState(false);
+    const [active, setactive] = useState(false);
+  const handleactive1 = () => {
+    setactive1(!active1);
+  };
+
+    const handleactive = (number) => {
     setactive(number);
   };
+
   return (
-    <section>
+    <section className="py-4 border-b">
       <div className="container">
-        {/* ========= sidebar start ======= */}
-        <div className="relative flex  w-full max-w-[18rem] flex-col rounded-xl bg-white bg-clip-border p-3 text-gray-700 shadow-xl shadow-blue-gray-900/5">
-          <div className="p-2 mb-2 flex justify-between border-b">
-            <h5 className="font-poppins font-bold text-xl text-black">
-              Filters
-            </h5>
-            <Image src={icon1} alt="" />
-          </div>
+        <div
+          onClick={handleactive1}
+          className="p-2  flex justify-between items-center cursor-pointer"
+        >
+          <h5 className="font-poppins font-bold text-xl text-black">
+            Dress Style
+          </h5>
+          <IoIosArrowForward
+            className={`${
+              active1
+                ? "rotate-90 text-xl transition-transform duration-300"
+                : "rotate-0 text-xl transition-transform duration-300"
+            }`}
+          />
+        </div>
+
+        {
+            active1 && 
+
+        <div>
           <div>
             <div
               onClick={() => handleactive(1)}
@@ -258,23 +270,8 @@ export default function CasualProducts() {
               </div>
             ) : null}
           </div>
-          <div>
-            <Price/>
-          </div>
-          <div>
-            <Colors/>
-          </div>
-          <div>
-            <Size/>
-          </div>
-          <div>
-            <DressStyle/>
-          </div>
-              <div className="bg-black rounded-4xl hover:bg-black/85 hover:rounded-4xl mt-10 ">
-                        <button className="text-base font-poppins font-medium text-white py-4 px-21 cursor-pointer text-center  ">Apply Filter</button>
-                    </div>
         </div>
-        {/* ====== sidebar end ========= */}
+        }
       </div>
     </section>
   );
