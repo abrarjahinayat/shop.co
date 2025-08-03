@@ -6,6 +6,7 @@ import cart3 from "../cartimg/cart3.png";
 import deletebox from "../cartimg/deletebox.png";
 import Image from "next/image";
 import { FaMinus, FaPlus } from "react-icons/fa6";
+import OrderSummary from "./OrderSummary";
 export default function Yourcart() {
   const [count, setcount] = useState(1);
 
@@ -49,6 +50,7 @@ export default function Yourcart() {
         <h2 className="font-poppins font-bold text-5xl mb-5 text-black">
           Your cart
         </h2>
+        <div className="flex justify-between">
         <div className="w-[715px] border border-gray-300 rounded-md px-6 py-5  ">
           {
             cartsitem.map((item)=>(
@@ -106,6 +108,10 @@ export default function Yourcart() {
           </div>
             ))
           }
+        </div>
+        <div>
+            <OrderSummary/>
+        </div>
         </div>
       </div>
     </section>
