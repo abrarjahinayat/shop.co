@@ -35,7 +35,7 @@ export default function Banner() {
   const [count, setcount] =useState(1)
 
   const handleMinus = () => {
-  if (count > 0) {
+  if (count > 1) {
     setcount(count - 1);
   }
 };
