@@ -9,9 +9,10 @@ import sponsore from '../images/sponsore.png'
 import Newslatter from "./Newslatter";
 export default function Footer() {
     return (
-        <section className="bg-searchbar-bg py-40 ">
+        <section className="bg-searchbar-bg py-40  ">
           
             <div className="container">
+          
                 <div className="flex justify-between items-center border-b border-gray-300 py-10">
                     <div>
                         <Image src={logo} alt="" />

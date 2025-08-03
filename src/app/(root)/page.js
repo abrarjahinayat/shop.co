@@ -18,7 +18,7 @@ const page = () => {
       <TopSelling/>
       <DressStyle/>
       <CustomerFeedback/>
-      <Newslatter/>
+      
 
     </div>
   )

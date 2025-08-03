@@ -1,7 +1,9 @@
 "use client"
 import React, { useState } from "react";
 import { GrClose } from "react-icons/gr";
+import { useRouter } from "next/navigation";
 const Topnav = () => {
+  const router = useRouter()
   let [close, setclose] = useState(true)
 
   let handleclose = ()=>{
@@ -18,7 +20,7 @@ const Topnav = () => {
             {" "}
             Sign up and get 20% off to your first order.{" "}
             <span>
-              <a className=" underline decoration-1" href="#">
+              <a onClick={()=>router.push('/signuppage')} className=" underline decoration-1" href="#">
                 Sign Up Now
               </a>
             </span>

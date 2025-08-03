@@ -15,7 +15,9 @@ import { Lens } from "@/components/magicui/lens";
 import { FaCheck } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 export default function Banner() {
+  const router = useRouter()
   const [active, setactive] = useState(1);
   const [coloractive , setcoloractive] =useState(1)
   const [sizeactive , setsizeactive] =useState(1)
@@ -164,7 +166,7 @@ const handlePlus = () => {
 
                     </div>
                     <div className="bg-black rounded-4xl hover:bg-black/85 hover:rounded-4xl ">
-                        <button className="text-base font-poppins font-medium text-white px-35 py-4 cursor-pointer   ">Add to Cart</button>
+                        <button onClick={()=>router.push('/cart')} className="text-base font-poppins font-medium text-white px-35 py-4 cursor-pointer   ">Add to Cart</button>
                     </div>
                 </div>
               </div>
