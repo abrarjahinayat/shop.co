@@ -7,7 +7,7 @@ import brand5 from '../images/brand5.png'
 import Image from 'next/image'
 const Brands = () => {
   return (
-    <section className='bg-black py-11'>
+    <section id='brands' className='bg-black py-11'>
         <div className="container">
             <div className='flex justify-between items-center'>
                 <Image src={brand1} alt="" />

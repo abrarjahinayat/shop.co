@@ -52,7 +52,7 @@ const Products = () => {
             ))
         }
         </div>
-        <button className="bg-white border transition duration-300 ease-in-out border-gray-300 rounded-full text-black text-md font-lato font-medium py-4 px-20 mx-auto block mt-10 cursor-pointer hover:bg-black hover:text-white">View All</button>
+      
       </div>
     </section>
   );

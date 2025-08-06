@@ -18,10 +18,10 @@ const Navbar = () => {
             <ul className="flex items-center gap-x-5">
               <li className="text-xl text-black-bg font-normal">Shop</li>
               <li className="text-xl text-black-bg font-normal">On Sale</li>
-              <li className="text-xl text-black-bg font-normal">
-                New Arriavals
+              <li >
+               <a href="#newarrivals" className="text-xl text-black-bg font-normal" > New Arriavals</a>
               </li>
-              <li className="text-xl text-black-bg font-normal">Brands</li>
+              <li><a href="#brands"  className="text-xl text-black-bg font-normal">Brands</a></li>
             </ul>
           </div>
           <div>
