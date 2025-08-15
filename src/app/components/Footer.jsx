@@ -9,11 +9,11 @@ import sponsore from '../images/sponsore.png'
 import Newslatter from "./Newslatter";
 export default function Footer() {
     return (
-        <section className="bg-searchbar-bg py-40  ">
+        <section className="bg-searchbar-bg lg:py-40 py-20 ">
           
             <div className="container">
           
-                <div className="flex justify-between items-center border-b border-gray-300 py-10">
+                <div className="lg:flex justify-between items-center border-b border-gray-300 py-10">
                     <div>
                         <Image src={logo} alt="" />
                         <p className="font-lato text-base text-black/60 font-semibold w-[350px] mt-6">
@@ -44,7 +44,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="mt-5 lg:mt-0">
                         <h6 className="text-lg text-lato font-semibold text-black">COMPANY</h6>
                         <ul>
 
@@ -54,7 +54,7 @@ export default function Footer() {
                         <li className="text-base font-lato text-black/60 font-semibold ">Career</li>
                         </ul>
                     </div>
-                     <div>
+                     <div className="mt-5 lg:mt-0">
                         <h6 className="text-lg text-lato font-semibold text-black">HELP</h6>
                         <ul>
 
@@ -64,7 +64,7 @@ export default function Footer() {
                         <li className="text-base font-lato text-black/60 font-semibold ">Privacy Policy</li>
                         </ul>
                     </div> 
-                    <div>
+                    <div className="mt-5 lg:mt-0">
                         <h6 className="text-lg text-lato font-semibold text-black">F A Q</h6>
                         <ul>
 
@@ -74,7 +74,7 @@ export default function Footer() {
                         <li className="text-base font-lato text-black/60 font-semibold ">Payments</li>
                         </ul>
                     </div> 
-                    <div>
+                    <div className="mt-5 lg:mt-0">
                         <h6 className="text-lg text-lato font-semibold text-black">Resources</h6>
                         <ul>
 
@@ -85,9 +85,9 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 items-center mt-5">
-                <p className="text-sm text-black/60 font-lato font-semibold">Shop.co © 2000-2023, All Rights Reserved</p>
-                <span className="justify-self-end">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-y-0 items-center mt-5">
+                <p className="text-sm text-center lg:text-start text-black/60 font-lato font-semibold">Shop.co © 2000-2023, All Rights Reserved</p>
+                <span className="lg:justify-self-end justify-self-center">
                     <Image src={sponsore} alt="" />
                 </span>
                 </div>
