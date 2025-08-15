@@ -67,7 +67,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="lg:hidden block">
           <Image src={bannerimg} alt="" />
         </div>
       </div>

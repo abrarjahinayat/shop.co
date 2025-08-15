@@ -9,12 +9,12 @@ const Brands = () => {
   return (
     <section id='brands' className='bg-black py-11'>
         <div className="container">
-            <div className='flex justify-between items-center'>
-                <Image src={brand1} alt="" />
-                <Image src={brand2} alt="" />
-                <Image src={brand3} alt="" />
-                <Image src={brand4} alt="" />
-                <Image src={brand5} alt="" />
+            <div className='lg:flex  lg:justify-between lg:items-center grid grid-cols-3 gap-4'>
+                <Image className='w-[100px] lg:w-auto' src={brand1} alt="" />
+                <Image className='w-[70px] lg:w-auto' src={brand2} alt="" />
+                <Image className='w-[100px] lg:w-auto' src={brand3} alt="" />
+                <Image className='w-[100px] lg:w-auto' src={brand4} alt="" />
+                <Image className='w-[100px] lg:w-auto' src={brand5} alt="" />
             </div>
         </div>
     </section>
