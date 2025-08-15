@@ -10,9 +10,9 @@ import Customerslide from "./Customerslide";
 
 export default function CustomerFeedback() {
   return (
-    <section className="py-20">
+    <section className="py-20 hidden lg:block">
       <div className="container">
-        <h2 className="font-poppins font-bold text-5xl mb-8 text-black uppercase ">
+        <h2 className="font-poppins font-bold text-4xl lg:text-5xl mb-8 text-black uppercase ">
           OUR HAPPY CUSTOMERS
         </h2>
         <div className="w-full mx-auto">

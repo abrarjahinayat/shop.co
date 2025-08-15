@@ -17,7 +17,7 @@ const page = () => {
       <NewArrivals/>
       <TopSelling/>
       <DressStyle/>
-      {/* <CustomerFeedback/> */}
+      <CustomerFeedback/>
       
 
     </div>
