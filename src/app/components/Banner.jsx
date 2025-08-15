@@ -1,24 +1,26 @@
 "use client";
 import React from "react";
 import CountUp from "react-countup";
+import bannerimg from '../images/banner1.png'
+import Image from "next/image";
 const Banner = () => {
   return (
-    <section className="bg-[url('/image/banner.png')] bg-cover bg-no-repeat py-40">
+    <section className="lg:bg-[url('/image/banner.png')] lg:bg-cover lg:bg-no-repeat pt-10 lg:py-40 bg-mobile-bg lg:bg-transparent">
       <div className="container">
-        <h1 className="w-[570px] font-oswald font-bold text-black text-7xl">
+        <h1 className="lg:w-[570px] w-auto font-oswald font-bold text-black text-4xl lg:text-7xl">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </h1>
-        <p className="text-md text-black/60 w-[545px] font-poppins py-8">
+        <p className="lg:text-lg text-sm text-black/60 lg:w-[545px] font-poppins lg:py-8 py-4">
           Browse through our diverse range of meticulously crafted garments,
           designed to bring out your individuality and cater to your sense of
           style.
         </p>
 
-        <button className="bg-black text-white font-medium text-md rounded-full py-4 px-16 ">
+        <button className="bg-black text-white font-medium text-md rounded-full py-4 lg:px-16 w-full lg:w-auto ">
           Shop Now
         </button>
 
-        <div className="flex  sm:flex-row w-full max-w-full lg:max-w-[600px] gap-6 sm:gap-8 lg:gap-x-15 justify-center lg:justify-start items-center text-xl lg:text-3xl mt-8 sm:mt-10 text-black px-2 sm:px-4 lg:px-0">
+        <div className="flex  w-full  max-w-full lg:max-w-[600px] gap-6 sm:gap-8 lg:gap-x-15 justify-center lg:justify-start items-center text-xl lg:text-3xl mt-8 sm:mt-10 text-black px-2 sm:px-4 lg:px-0">
           <div className="text-center lg:text-left">
             <div>
               <CountUp
@@ -64,6 +66,9 @@ const Banner = () => {
             Happy Customers
             </p>
           </div>
+        </div>
+        <div>
+          <Image src={bannerimg} alt="" />
         </div>
       </div>
     </section>

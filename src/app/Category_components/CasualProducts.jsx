@@ -206,56 +206,49 @@ export default function CasualProducts() {
                     </div>
                   </CollapsibleContent>
                 </SidebarGroup>
-              </Collapsible> 
-              
-              
-                <Collapsible defaultClose className="group/collapsible">
+              </Collapsible>
+
+              <Collapsible defaultClose className="group/collapsible">
                 <SidebarGroup>
                   <SidebarGroupLabel asChild>
                     <CollapsibleTrigger>
                       <h4 className="font-oswald text-base text-black/60 font-medium">
-                       Jeans
+                        Jeans
                       </h4>
                       <IoIosArrowForward className="ml-auto  transition-transform group-data-[state=open]/collapsible:rotate-90" />
                     </CollapsibleTrigger>
                   </SidebarGroupLabel>
 
                   <CollapsibleContent>
-                        <div className=" bg-gray-200 rounded-md p-2 cursor-pointer   ">
-                    <div className="flex gap-x-3">
-                      <input type="checkbox" name="" />
-                      <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
-                        Formal Jeans
-                      </h4>
+                    <div className=" bg-gray-200 rounded-md p-2 cursor-pointer   ">
+                      <div className="flex gap-x-3">
+                        <input type="checkbox" name="" />
+                        <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
+                          Formal Jeans
+                        </h4>
+                      </div>
+                      <div className="flex gap-x-3">
+                        <input type="checkbox" name="" id="" />
+                        <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
+                          Half Jeans
+                        </h4>
+                      </div>
+                      <div className="flex gap-x-3">
+                        <input type="checkbox" name="" id="" />
+                        <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
+                          Denim Jeans
+                        </h4>
+                      </div>
+                      <div className="flex gap-x-3">
+                        <input type="checkbox" name="" id="" />
+                        <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
+                          Flannel Jeans
+                        </h4>
+                      </div>
                     </div>
-                    <div className="flex gap-x-3">
-                      <input type="checkbox" name="" id="" />
-                      <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
-                        Half Jeans
-                      </h4>
-                    </div>
-                    <div className="flex gap-x-3">
-                      <input type="checkbox" name="" id="" />
-                      <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
-                        Denim Jeans
-                      </h4>
-                    </div>
-                    <div className="flex gap-x-3">
-                      <input type="checkbox" name="" id="" />
-                      <h4 className="font-oswald text-base text-black/60 font-medium py-2 hover:text-black ">
-                        Flannel Jeans
-                      </h4>
-                    </div>
-                  </div>
                   </CollapsibleContent>
                 </SidebarGroup>
               </Collapsible>
-
-               
-
-
-
-
 
               <div>
                 <Price />

@@ -13,12 +13,13 @@ html {
   --font-oswald: var(--font-oswald);
   --color-black-bg: #000000;
   --color-searchbar-bg: #F0F0F0;
+  --color-mobile-bg: #F2F0F1;
 
 }
 
 @layer components{
   .container{
-    @apply mx-auto !max-w-[1340px];
+    @apply mx-auto !max-w-[1340px] lg:px-0 px-2;
   }
 }
 
