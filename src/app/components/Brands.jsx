@@ -10,11 +10,11 @@ const Brands = () => {
     <section id='brands' className='bg-black py-11'>
         <div className="container">
             <div className='lg:flex  lg:justify-between lg:items-center grid grid-cols-3 gap-4'>
-                <Image className='w-[100px] lg:w-auto' src={brand1} alt="" />
-                <Image className='w-[70px] lg:w-auto' src={brand2} alt="" />
-                <Image className='w-[100px] lg:w-auto' src={brand3} alt="" />
-                <Image className='w-[100px] lg:w-auto' src={brand4} alt="" />
-                <Image className='w-[100px] lg:w-auto' src={brand5} alt="" />
+                <Image className='w-[100px] lg:w-[180px]' src={brand1} alt="" />
+                <Image className='w-[70px] lg:w-[90px]' src={brand2} alt="" />
+                <Image className='w-[100px] lg:w-[180px]' src={brand3} alt="" />
+                <Image className='w-[100px] lg:w-[180px]' src={brand4} alt="" />
+                <Image className='w-[100px] lg:w-[180px]' src={brand5} alt="" />
             </div>
         </div>
     </section>

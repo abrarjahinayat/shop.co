@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const DressStyle = () => {
   return (
-    <section>
+    <section className='py-5 lg:py-10'>
         <div className="container">
             <div className='bg-searchbar-bg rounded-4xl py-6 px-3 lg:py-16 lg:px-16'>
                 <h2 className='font-poppins font-bold text-4xl lg:text-5xl text-black uppercase text-center'>BROWSE BY Dress STYLE</h2>

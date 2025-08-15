@@ -47,9 +47,9 @@ const handlePlus = () => {
   return (
     <section className="py-20">
       <div className="container">
-        <div className="flex">
-          <div className="w-2/4 ">
-            <div className="flex justify-between">
+        <div className="lg:flex">
+          <div className="lg:w-2/4 ">
+            <div className="flex  justify-between">
               <div className="grid gap-y-3">
                 <Image
                   onClick={() => handleActive(1)}
@@ -107,7 +107,10 @@ const handlePlus = () => {
               </div>
             </div>
           </div>
-          <div className="w-2/4 ">
+
+
+
+          <div className="lg:w-2/4 ">
             <div className="px-10">
               <h2 className="font-poppins font-bold text-[40px] text-black uppercase ">
                 One Life Graphic T-shirt

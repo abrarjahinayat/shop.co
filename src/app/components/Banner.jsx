@@ -16,9 +16,9 @@ const Banner = () => {
           style.
         </p>
 
-        <button className="bg-black text-white font-medium text-md rounded-full py-4 lg:px-16 w-full lg:w-auto ">
+        <a href="#newarrivals" className="bg-black text-white font-medium text-md rounded-full py-4 px-16 mt-4   inline-block">
           Shop Now
-        </button>
+        </a>
 
         <div className="flex  w-full  max-w-full lg:max-w-[600px] gap-6 sm:gap-8 lg:gap-x-15 justify-center lg:justify-start items-center text-xl lg:text-3xl mt-8 sm:mt-10 text-black px-2 sm:px-4 lg:px-0">
           <div className="text-center lg:text-left">

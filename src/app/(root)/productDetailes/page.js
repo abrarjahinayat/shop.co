@@ -17,7 +17,7 @@ export default function productDetailespage() {
   return (
     <div>
       <div className="container">
-      <Breadcrumb>
+      <Breadcrumb className="mt-4">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
