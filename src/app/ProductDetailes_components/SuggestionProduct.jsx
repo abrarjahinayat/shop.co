@@ -6,6 +6,7 @@ import product4 from "../productimg/product4.png";
 import starfull from '../productimg/starfull.png'
 import starhalf from '../productimg/starhalf.png'
 import Image from "next/image";
+import Link from 'next/link';
 export default function SuggestionProduct() {
       const productData =[
             {
@@ -28,33 +29,50 @@ export default function SuggestionProduct() {
         ]
   return (
    
-    <section className='py-10'>
-   <div className="container">
-      <h2 className="font-poppins font-bold text-center text-5xl mb-12 text-black uppercase ">
+      <section className="lg:py-6 py-3">
+      <div className="container">
+         <h2 className="font-poppins font-bold text-center text-3xl lg:text-5xl lg:mb-12 mb-6 text-black uppercase ">
           You might also like
         </h2>
-        <div className="flex justify-between items-center">
+        {/* Grid layout for responsiveness */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8">
+          {productData.map((item, index) => (
+            <Link
+              key={index}
+              href={"/productDetailes"}
+              className="border border-gray-100 lg:hover:border-black/20 px-3 py-5 rounded-md cursor-pointer"
+            >
+              {/* Product Image */}
+              <Image
+                className="w-[108px] lg:w-auto mx-auto"
+                src={item.image}
+                alt={item.title}
+              />
 
-        {
-            productData.map((item)=>(
+              {/* Product Title */}
+              <h4 className="lg:text-lg text-sm font-lato font-bold text-black mt-3 line-clamp-2">
+                {item.title}
+              </h4>
 
-        <div className=" border border-gray-100 hover:border-black/20 w-[295px] px-3 py-5 rounded-md cursor-pointer">
-          <Image src={item.image} alt="" />
-          <h4 className="text-md font-lato font-bold text-black mt-3">{item.title}</h4>
-            <div className="flex items-center mt-1">
-                <Image src={starfull} alt="" />
-                <Image src={starfull} alt="" />
-                <Image src={starfull} alt="" />
-                <Image src={starfull} alt="" />
-                <Image src={starhalf} alt="" />
-                <p className="font-lato text-sm font-normal ml-3">4.5/5</p>
-            </div>
-            <h6 className="font-poppins font-bold text-2xl text-black mt-2">${item.Price}</h6>
+              {/* Rating */}
+              <div className="flex items-center mt-1">
+                <Image src={starfull} alt="star" />
+                <Image src={starfull} alt="star" />
+                <Image src={starfull} alt="star" />
+                <Image src={starfull} alt="star" />
+                <Image src={starhalf} alt="half star" />
+                <p className="font-lato lg:text-sm text-xs font-normal ml-3">
+                  4.5/5
+                </p>
+              </div>
+
+              {/* Price */}
+              <h6 className="font-poppins font-bold lg:text-2xl text-black mt-2">
+                ${item.Price}
+              </h6>
+            </Link>
+          ))}
         </div>
-            ))
-        }
-        </div>
-      
       </div>
     </section>
   )

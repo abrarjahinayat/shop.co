@@ -32,7 +32,7 @@ export default function productDetailespage() {
       </div>
       <Banner />
       <Rating />
-      {/* <SuggestionProduct /> */}
+      <SuggestionProduct />
     </div>
   );
 }
