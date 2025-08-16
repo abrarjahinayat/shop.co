@@ -136,7 +136,7 @@ export default function Banner() {
           </div>
 
           {/* RIGHT SIDE CONTENT (unchanged) */}
-          <div className="lg:w-2/4 w-full">
+      
             {/* ... your content side (title, rating, price, colors, size, add to cart) stays same ... */}
               <div className="lg:w-2/4 w-full">
             <div className="px-3 lg:px-10">
@@ -239,7 +239,7 @@ export default function Banner() {
           </div>
           </div>
         </div>
-      </div>
+  
     </section>
   );
 }
