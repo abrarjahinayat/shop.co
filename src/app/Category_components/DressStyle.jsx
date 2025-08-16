@@ -15,12 +15,12 @@ export default function DressStyle() {
 
   return (
     <section className="py-4 border-b">
-      <div className="container">
+      <div >
         <div
           onClick={handleactive1}
           className="p-2  flex justify-between items-center cursor-pointer"
         >
-          <h5 className="font-poppins font-bold text-xl text-black">
+          <h5 className="font-poppins font-bold lg:text-xl text-lg text-black">
             Dress Style
           </h5>
           <IoIosArrowForward

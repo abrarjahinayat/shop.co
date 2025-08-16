@@ -15,12 +15,12 @@ export default function Size() {
   };
   return (
     <section className="border-b py-4">
-      <div className="container">
+      <div >
         <div
           onClick={handleactive}
           className="p-2  flex justify-between items-center cursor-pointer"
         >
-          <h5 className="font-poppins font-bold text-xl text-black">Size</h5>
+          <h5 className="font-poppins font-bold lg:text-xl text-lg text-black">Size</h5>
           <IoIosArrowForward
             className={`${
               active

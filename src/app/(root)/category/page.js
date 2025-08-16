@@ -16,7 +16,7 @@ export default function Category_page() {
     <div>
       <div className="container"> 
 
-      <Breadcrumb>
+      <Breadcrumb className="mt-4">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
