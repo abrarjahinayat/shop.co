@@ -45,13 +45,13 @@ export default function Yourcart() {
   ];
 
   return (
-    <section className="py-10">
+    <section className="lg:py-10 py-5">
       <div className="container">
-        <h2 className="font-poppins font-bold text-5xl mb-5 text-black">
+        <h2 className="font-poppins font-bold lg:text-5xl text-4xl mb-5 text-black">
           Your cart
         </h2>
-        <div className="flex justify-between">
-        <div className="w-[715px] border border-gray-300 rounded-md px-6 py-5  ">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-0  justify-between">
+        <div className="lg:w-[715px] border border-gray-300 rounded-md px-6 lg:py-5  ">
           {
             cartsitem.map((item)=>(
 
@@ -63,7 +63,7 @@ export default function Yourcart() {
                 </div>
 
                 <div>
-                  <h3 className="font-poppins font-bold text-2xl text-black">
+                  <h3 className="font-poppins font-bold text-lg lg:text-2xl text-black">
                    {item.Title}
                   </h3>
 

@@ -3,8 +3,8 @@ import { FaPenRuler } from "react-icons/fa6";
 export default function OrderSummary() {
   return (
     <section>
-        <div className="container">
-            <div className='w-[605px] border border-gray-300 rounded-md px-6 py-5'>
+        <div >
+            <div className='lg:w-[605px] border border-gray-300 rounded-md lg:px-6 px-3 py-5'>
                 <h3 className='text-2xl font-poppins font-bold text-black'>Order Summary</h3>
                 <div className='border-b py-5 '>
                     <span className='flex justify-between items-center '>
@@ -28,15 +28,15 @@ export default function OrderSummary() {
                 <div className='flex items-center gap-x-3'>
                     <div className='relative'>
                     <FaPenRuler className='text-xl absolute text-black/60 top-4 left-4' />
-                    <input className='bg-searchbar-bg w-[410px] py-3 px-11 border rounded-full text-base uppercase font-oswald font-medium text-black/60' type="text" placeholder='Add promo code' />
+                    <input className='bg-searchbar-bg lg:w-[410px] py-3 px-11 border rounded-full text-base uppercase font-oswald font-medium text-black/60' type="text" placeholder='Add promo code' />
 
                     </div>
                     <div>
-                        <button className='bg-black text-white font-poppins font-medium text-base py-3 px-12 rounded-full cursor-pointer hover:bg-black/90'>Apply</button>
+                        <button className='bg-black text-white font-poppins font-medium text-base py-3 px-9 lg:px-12 rounded-full cursor-pointer hover:bg-black/90'>Apply</button>
                     </div>
                 </div>
                  <div className='py-5'>
-                        <button className='bg-black text-white font-poppins font-medium text-base py-5 px-53 rounded-full cursor-pointer hover:bg-black/90'>Go to Checkout</button>
+                        <button className='bg-black text-white font-poppins font-medium text-base lg:py-5 lg:px-53 py-3 w-full lg:w-auto rounded-full cursor-pointer hover:bg-black/90'>Go to Checkout</button>
                     </div>
             </div>
         </div>
