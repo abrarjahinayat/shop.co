@@ -31,8 +31,8 @@ export default function productDetailespage() {
       </Breadcrumb>
       </div>
       <Banner />
-      <Rating />
-      <SuggestionProduct />
+      {/* <Rating />
+      <SuggestionProduct /> */}
     </div>
   );
 }
