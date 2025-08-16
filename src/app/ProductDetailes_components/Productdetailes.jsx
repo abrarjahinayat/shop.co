@@ -3,9 +3,9 @@ import sizechart from '../productdetailesimg/sizechart.jpg'
 import Image from "next/image";
 export default function Productdetailes() {
   return (
-    <section className="py-7">
+    <section className="lg:py-7 py-5">
       <div className="container">
-        <p className='font-lato text-lg text-black/80 font-semibold  '>
+        <p className='font-lato lg:text-lg text-black/80 font-semibold  '>
           Men's Premium Quality t-shirt offers a much smoother, silky feel and
           more structured, mid-weight fit than regular t-shirts. The t-shirts
           are made with the finest quality Combed Compact Cotton, which features
@@ -14,9 +14,9 @@ export default function Productdetailes() {
           and width will not change over wash or months of usage.
         </p>
 
-        <p className='font-lato text-xl text-black font-semibold py-7 '>Detailed Specification:</p>
+        <p className='font-lato lg:text-xl text-black font-semibold lg:py-7 py-5 '>Detailed Specification:</p>
             <div>
-                <ul className="list-disc font-lato text-lg text-black/60 font-semibold px-3">
+                <ul className="list-disc font-lato lg:text-lg text-black/60 font-semibold px-3">
                     <li>Organic Ringspun Combed Compact Cotton</li>
                     <li>100% Cotton</li>
                     <li>Regular fit, Crew Neck Mid-weight, 5.16 oz/yd2(~175GSM)</li>
@@ -26,9 +26,9 @@ export default function Productdetailes() {
                 </ul>
             </div>
 
-            <p className='font-lato text-xl text-black font-semibold py-5 ' >Size chart - In inches (Expected Deviation &lt; 3% )</p>
+            <p className='font-lato lg:text-xl text-black font-semibold py-5 ' >Size chart - In inches (Expected Deviation &lt; 3% )</p>
 
-            <Image src={sizechart} alt="" className="-ml-2" />
+            <Image src={sizechart} alt="" className="-ml-2 " />
       </div>
     </section>
   );

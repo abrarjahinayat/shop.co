@@ -24,8 +24,8 @@ export default function Rating() {
             <h5
               className={`${
                 active == 1
-                  ? "font-poppins font-semibold text-center text-xl text-black border-b-1 border-black pb-2 w-[414px]"
-                  : "font-poppins font-medium text-center text-xl text-black/60 border-b-1 pb-2 w-[414px]"
+                  ? "font-poppins font-semibold text-center lg:text-xl text-black border-b-1 border-black pb-2 lg:w-[414px]"
+                  : "font-poppins font-medium text-center lg:text-xl text-black/60 border-b-1 pb-2 lg:w-[414px]"
               }`}
             >
               Product Details
@@ -35,8 +35,8 @@ export default function Rating() {
             <h5
               className={`${
                 active == 2
-                  ? "font-poppins font-semibold text-center text-xl text-black border-b-1 border-black pb-2 w-[414px]"
-                  : "font-poppins font-medium text-center text-xl text-black/60 border-b-1 pb-2 w-[414px]"
+                  ? "font-poppins font-semibold text-center lg:text-xl text-black border-b-1 border-black pb-2 lg:w-[414px]"
+                  : "font-poppins font-medium text-center lg:text-xl text-black/60 border-b-1 pb-2 lg:w-[414px]"
               }`}
             >
               Rating & Reviews
@@ -47,8 +47,8 @@ export default function Rating() {
               onClick={() => handleactive(3)}
               className={`${
                 active == 3
-                  ? "font-poppins font-semibold text-center text-xl text-black border-b-1 border-black pb-2 w-[414px]"
-                  : "font-poppins font-medium text-center text-xl text-black/60 border-b-1 pb-2 w-[414px]"
+                  ? "font-poppins font-semibold text-center lg:text-xl text-black border-b-1 border-black pb-2 lg:w-[414px]"
+                  : "font-poppins font-medium text-center lg:text-xl text-black/60 border-b-1 pb-2 lg:w-[414px]"
               }`}
             >
               FAQs
