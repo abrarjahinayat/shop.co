@@ -12,7 +12,7 @@ const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <section className="border-b border-gray-200">
+    <section className="border-b border-gray-200 relative z-50">
       <div className="container">
         <div className="flex items-center justify-between py-4">
           {/* Left Side - Hamburger + Logo */}
@@ -24,6 +24,7 @@ const Navbar = () => {
             >
               <FiMenu />
             </button>
+
             {/* Logo */}
             <div
               onClick={() => router.push("/")}
@@ -62,7 +63,7 @@ const Navbar = () => {
             {/* Search Icon (mobile) */}
             <button
               className="md:hidden text-2xl"
-              onClick={() => setSearchOpen(true)}
+              onClick={() => setSearchOpen(!searchOpen)}
             >
               <FiSearch />
             </button>
@@ -93,46 +94,68 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      {menuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-          <div className="bg-white w-64 h-full p-5">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-lg font-bold">Menu</h2>
-              <FiX
-                className="text-2xl cursor-pointer"
-                onClick={() => setMenuOpen(false)}
-              />
-            </div>
-            <ul className="flex flex-col gap-4">
-              <li onClick={() => setMenuOpen(false)}>Shop</li>
-              <li onClick={() => setMenuOpen(false)}>On Sale</li>
-              <li onClick={() => setMenuOpen(false)}>New Arrivals</li>
-              <li onClick={() => setMenuOpen(false)}>Brands</li>
-            </ul>
-          </div>
-        </div>
-      )}
+      {/* Mobile Search Bar (slide down) */}
+      <div
+        className={`absolute left-0 right-0 bg-gray-100 px-4 py-3 transition-all duration-300 overflow-hidden ${
+          searchOpen ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <input
+          type="text"
+          placeholder="Search Products by Titles or Tags"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md outline-none"
+        />
+      </div>
 
-      {/* Mobile Search Popup */}
-      {searchOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-          <div className="bg-white w-11/12 max-w-md p-4 rounded-lg">
-            <div className="flex items-center gap-2 border-b pb-2">
-              <FiSearch className="text-xl text-gray-500" />
-              <input
-                type="text"
-                placeholder="Search for products..."
-                className="w-full outline-none"
-              />
-              <FiX
-                className="text-2xl cursor-pointer"
-                onClick={() => setSearchOpen(false)}
-              />
-            </div>
+      {/* Mobile Menu (slide in from left, 50% width) */}
+      <div
+        className={`fixed inset-0 z-50 transition-opacity duration-300 ${
+          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        {/* Background Overlay */}
+        <div
+          className="absolute inset-0 bg-opacity-50"
+          onClick={() => setMenuOpen(false)}
+        ></div>
+
+        {/* Drawer */}
+        <div
+          className={`absolute left-0 top-0 h-full w-1/2 bg-white shadow-md transform  transition-all ease-in-out duration-300 ${
+            menuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <div className="flex justify-between items-center px-4 py-3 border-b">
+            <h2 className="text-lg font-bold">Menu</h2>
+            <FiX
+              className="text-2xl cursor-pointer"
+              onClick={() => setMenuOpen(false)}
+            />
           </div>
+          <ul className="flex flex-col gap-4 p-5 text-lg font-medium">
+            <li>
+              <a href="#" onClick={() => setMenuOpen(false)}>
+                Shop
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick={() => setMenuOpen(false)}>
+                On Sale
+              </a>
+            </li>
+            <li>
+              <a href="#newarrivals" onClick={() => setMenuOpen(false)}>
+                New Arrivals
+              </a>
+            </li>
+            <li>
+              <a href="#brands" onClick={() => setMenuOpen(false)}>
+                Brands
+              </a>
+            </li>
+          </ul>
         </div>
-      )}
+      </div>
     </section>
   );
 };
